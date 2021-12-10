@@ -8,7 +8,9 @@ namespace FacadeDesignPattern
         public String Name { get; set; }
         public String Role { get; set; }
     }
-
+    /// <summary>
+    /// summary added
+    /// </summary>
     public class Typist : Emplyoee
     {
         public int WordsPerMinute { get; set; }
