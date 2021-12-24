@@ -1,18 +1,50 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FacadeDesignPattern
 {
     internal class Program
     {
+        // a website needs to determine whether a particular product has reached
+        // a low stock level.
         static void Main(string[] args)
         {
+            // Application of Facade Protoype
             StockFacade facade = new StockFacade();
             bool low = facade.IsLowStock("ABC123");
+
+
+            
+            // Application of Prototyping 
+            
+            Developer dev = new Developer();
+            dev.Name = "Dipak";
+            dev.Role = "Team Leader";
+            dev.PreferredLanguage = "Java";
+
+            Developer devCopy = (Developer)dev.Clone();
+            devCopy.Name = "Sue";
+
+            Console.WriteLine(dev);
+            Console.WriteLine(devCopy);
+
+
+            Typist typist = new Typist();
+            typist.Name = "Rohit";
+            typist.Role = "Typist";
+            typist.WordsPerMinute = 120;
+
+            Typist typistCopy = (Typist)typist.Clone();
+            typistCopy.Name = "Tim";
+            typist.WordsPerMinute = 155;
+
+            Console.WriteLine(typist);
+            Console.WriteLine(typistCopy);
+            
+
+            // Factory Model
         }
+
+        
     }
 
     public class Product
