@@ -1,6 +1,6 @@
-## Gang of Four
+# Gang of Four
 
-# Facade Design Pattern
+## Facade Design Pattern
 - Set of simple functions that are made available to its users and that hide the complexities fo the difficult-to-use subsystmes.
 
 Package (A/B)
